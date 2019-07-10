@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <form action="{{url_for('buy')}}" method="POST">
+        <fieldset>
+            <div class="form-group">
+                <input name="symbol" class="form-control" type="text" placeholder="Symbol" autofocus/>
+            </div>
+            <div class="form-group">
+                <input name="shares" class="form-control" type="number" min="1" placeholder="Number of shares"/>
+            </div>
+            <div class="form-group">
+                <button class="form-control" type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <form method="POST">
+        <fieldset>
+            <div class="form-group">
+                <p>
+                    An action of {{name}} costs {{price}}
+                </p>
+            <div/>
+        </fieldset>
+    </form>
+{% endblock %}
